@@ -22,7 +22,7 @@ class Queue<T : Any> : IQueue<T> {
 
     // Big O (1)
     override fun peek(): T? {
-        return if (isEmpty) null else storage[storage.size - 1]
+        return if (isEmpty) null else storage[0]
     }
 
     override fun toString(): String {
